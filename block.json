@@ -1,0 +1,28 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "dweelio/embed",
+  "version": "1.0.0",
+  "title": "Dweelio Embed",
+  "category": "embed",
+  "icon": "embed-generic",
+  "description": "Embed Dweelio content using a UUID.",
+  "supports": {
+    "html": false,
+    "align": ["wide", "full"]
+  },
+  "textdomain": "dweelio-embed",
+  "editorScript": "file:./build/index.js",
+  "editorStyle": "file:./build/index.css",
+  "style": "file:./build/style-index.css",
+  "attributes": {
+    "uuid": {
+      "type": "string",
+      "default": ""
+    },
+    "height": {
+      "type": "number",
+      "default": 500
+    }
+  }
+}

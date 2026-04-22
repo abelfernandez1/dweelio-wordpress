@@ -1,0 +1,26 @@
+{
+  "name": "dweelio-embed",
+  "version": "1.0.0",
+  "description": "A simple WordPress plugin to embed Dweelio content using a Gutenberg block.",
+  "author": "Dweelio",
+  "license": "GPL-2.0-or-later",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "wp-scripts build && cp block.json build/",
+    "format": "wp-scripts format",
+    "lint:css": "wp-scripts lint-style",
+    "lint:js": "wp-scripts lint-js",
+    "start": "wp-scripts start",
+    "packages-update": "wp-scripts packages-update",
+    "zip": "npm run build && mkdir -p dist && zip -r dist/dweelio-embed.zip dweelio-embed.php block.json build src readme.txt"
+  },
+  "dependencies": {
+    "@wordpress/block-editor": "^9.8.0",
+    "@wordpress/blocks": "^11.21.0",
+    "@wordpress/components": "^19.17.0",
+    "@wordpress/i18n": "^4.26.0"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^24.0.0"
+  }
+}

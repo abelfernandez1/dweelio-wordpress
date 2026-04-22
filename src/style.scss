@@ -1,0 +1,19 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ */
+
+.wp-block-dweelio-embed {
+  margin: 0 auto;
+  
+  .dweelio-embed-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    
+    iframe {
+      border: 0;
+      max-width: 100%;
+    }
+  }
+}
